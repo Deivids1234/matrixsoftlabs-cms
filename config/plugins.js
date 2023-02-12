@@ -8,6 +8,7 @@ module.exports = ({env}) => ({
           endpoint: env('DO_SPACE_ENDPOINT'),
           space: env('DO_SPACE_BUCKET'),
           directory: env('DO_SPACE_DIRECTORY'),
+          cdn: env('DO_SPACE_CDN'),
         }
       },
     }, 
