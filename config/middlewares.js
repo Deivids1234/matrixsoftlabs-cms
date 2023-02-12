@@ -7,14 +7,19 @@ module.exports = ({ env }) => [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "connect-src": ["'self'", "https:"],
+          'connect-src': ["'self'", 'https:'],
           "img-src": [
             "'self'",
             "data:",
             "blob:",
-            "*.digitaloceanspaces.com"
+            `${env("DO_SPACE_BUCKET")}.${env("DO_SPACE_ENDPOINT")}`,
           ],
-          "media-src": ["'self'", "data:", "blob:"],
+          "media-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            `${env("DO_SPACE_BUCKET")}.${env("DO_SPACE_ENDPOINT")}`,
+          ],
           upgradeInsecureRequests: null,
         },
       },
