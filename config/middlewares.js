@@ -1,20 +1,25 @@
 
 module.exports = ({ env }) => [
   'strapi::errors',
-    {
+  {
     name: "strapi::security",
     config: {
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "connect-src": ["'self'", "https:"],
+          'connect-src': ["'self'", 'https:'],
           "img-src": [
             "'self'",
             "data:",
             "blob:",
-            "*.digitaloceanspaces.com"
+            `*.digitaloceanspaces.com`,
           ],
-          "media-src": ["'self'", "data:", "blob:"],
+          "media-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            `*.digitaloceanspaces.com`,
+          ],
           upgradeInsecureRequests: null,
         },
       },
