@@ -35,7 +35,7 @@
     "payTill": {
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
       "type": "date"
@@ -43,7 +43,7 @@
     "invoiceNumber": {
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
       "type": "string"
@@ -56,7 +56,7 @@
     "amount": {
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
       "type": "decimal"
