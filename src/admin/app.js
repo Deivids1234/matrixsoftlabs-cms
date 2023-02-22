@@ -17,7 +17,8 @@ const config = {
     // 'pl',
     // 'pt-BR',
     // 'pt',
-    // 'ru',
+    'ru',
+    'lv'
     // 'sk',
     // 'sv',
     // 'th',
@@ -33,6 +34,12 @@ const config = {
       "app.components.LeftMenu.navbrand.workplace": "Dashboard",
       "Auth.form.welcome.title": "Welcome to Matrixsoftlabs!",
       "Auth.form.welcome.subtitle": "Log in to your Matrixsoftlabs account",
+    },
+    ru: {
+      "app.components.LeftMenu.navbrand.title": "Matrixsoftlabs",
+      "app.components.LeftMenu.navbrand.workplace": "Панель управления",
+      "Auth.form.welcome.title": "Добро пожаловать в Matrixsoftlabs!",
+      "Auth.form.welcome.subtitle": "Войдите в свой Matrixsoftlabs профиль",
     },
   },
 };
