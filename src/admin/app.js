@@ -28,6 +28,7 @@ const config = {
     // 'zh-Hans',
     // 'zh',
   ],
+  
   translations: {
     en: {
       "app.components.LeftMenu.navbrand.title": "Matrixsoftlabs",
@@ -41,6 +42,9 @@ const config = {
       "Auth.form.welcome.title": "Добро пожаловать в Matrixsoftlabs!",
       "Auth.form.welcome.subtitle": "Войдите в свой Matrixsoftlabs профиль",
     },
+    tutorials: false,
+    // Disable notifications about new Strapi releases
+     notifications: { releases: false },
   },
 };
 
